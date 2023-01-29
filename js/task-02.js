@@ -14,7 +14,7 @@ const makeIngredients = elements => {
     const liItem = document.createElement(`li`);
     liItem.textContent = `ingredient`;
     liItem.classList.add(`item`);
-    return element;
+    return liItem;
   });
 };
 const ul = document.querySelector(`ul#ingredients`);
