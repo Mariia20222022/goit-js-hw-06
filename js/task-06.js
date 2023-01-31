@@ -9,7 +9,7 @@ function onBlur(event) {
   const field = event.currentTarget;
   if (field.value.length === dataLength) {
     this.classList.add(`valid`);
-    this.classList.revove(`invalid`);
+    this.classList.remove(`invalid`);
   } else {
     this.classList.remove(`valid`);
     this.classList.add(`invalid`);
