@@ -4,13 +4,10 @@ console.log(field);
 
 input.addEventListener(`input`, onInputChange);
 
-
-  
 function onInputChange(event) {
-    console.log(event.currentTarget.value);
-    field.textContent = event.currentTarget.value;
-    if (event.currentTarget.value === "") {
-        field.textContent = `Anonymous`;
-    }
+  console.log(event.currentTarget.value);
+  field.textContent = event.currentTarget.value;
+  if (event.currentTarget.value === "") {
+    field.textContent = `Anonymous`;
+  }
 }
-
