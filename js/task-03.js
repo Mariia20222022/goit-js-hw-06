@@ -17,7 +17,7 @@ const list = document.querySelector(`.gallery`);
 for (let el of images)
   list.insertAdjacentHTML(
     "beforeEnd",
-    `<li><img src= ${el.url}, width=400, alt=${el.alt}> </img></li>`
+    `<li><img src= ${el.url}, width=400, alt=${el.alt},> </img></li>`
   );
 
 list.style.display = "flex";
