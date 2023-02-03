@@ -14,12 +14,13 @@ const images = [
 ];
 
 const list = document.querySelector(`.gallery`);
-for (let el of images)
-  list.insertAdjacentHTML(
-    "beforeEnd",
-    `<li><img src= ${el.url}, width=400, alt=${el.alt},> </img></li>`
-  );
 
+const markUp = images
+  .map(
+    (el) => `<li><img src= ${el.url}, width=400, alt=${el.alt},> </img></li>`
+  )
+  .join(``);
+list.insertAdjacentHTML(`beforeend`, markUp);
 list.style.display = "flex";
 list.style.listStyle = "none";
 list.style.gap = "20px";
